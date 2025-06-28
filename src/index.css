@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-artistic: "Kirang Haerang", system-ui;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e0e1dd;
+  color: #1b263b;
+  font-family: "Raleway" , sans-serif;
+}
