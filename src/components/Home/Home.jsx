@@ -12,7 +12,7 @@ const Home = () => {
                 <p>ISHANI</p>
                 <p>MAURYA</p>
             </div>
-            <div className='h-[85vh] w-[30vw] z-[100] absolute right-[37%] bottom-0 brightness-125'>
+            <div className='h-[85vh] w-[30vw] z-[90] absolute right-[37%] bottom-0 brightness-125'>
                 <img src={ishani} className='w-full h-full' />
             </div>
         </section>
