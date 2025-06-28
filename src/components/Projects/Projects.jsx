@@ -2,33 +2,35 @@ import { useState, useEffect, useRef } from 'react';
 import SingleProject from './SingleProject';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
+import { images } from '../../assets/images'
+// console.log(images)
 
 const projects = [
   {
     title: "Coffee Island, Gurgaon",
     description: "Brought life to a café wall in Gurgaon with a hand-painted mural that sparked curiosity, conversation, and increased customer visits.",
-    src: "pic1.jpg",
+    src: images[0],
     color: "#e0e1dd",
     link: "https://yash-cartcraft.vercel.app/"
   },
   {
     title: "PROJECT 2",
     description: "Sample description of the project done along with brief details",
-    src: "pic3.jpg",
+    src: images[2],
     color: "#778da9",
     link: "https://yash-cartcraft.vercel.app/"
   },
   {
     title: "PROJECT 3",
     description: "Sample description of the project done along with brief details",
-    src: "pic4.jpg",
+    src: images[3],
     color: "#415a77",
     link: "https://yash-cartcraft.vercel.app/"
   },
   {
     title: "PROJECT 4",
     description: "Sample description of the project done along with brief details",
-    src: "pic5.jpg",
+    src: images[4],
     color: "#e0e1dd",
     link: "https://yash-cartcraft.vercel.app/"
   }
@@ -121,7 +123,7 @@ export default function Projects() {
                     style={{ backgroundColor: color }}
                     key={`modal_${index}`}
                   >
-                    <img src={`/src/assets/${src}`} width={300} height={0} alt="image" className='h-auto' />
+                    <img src={src} width={300} height={0} alt="image" className='h-auto' />
                   </div>
                 )
               })

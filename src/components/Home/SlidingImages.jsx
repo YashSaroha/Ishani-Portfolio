@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/all';
 import { images } from '../../assets/images';
 
 const carouselImages = [...images, ...images]; // For looping we have used the photos twice
-console.log(carouselImages);
+// console.log(carouselImages);
 
 
 export default function Carousel() {
