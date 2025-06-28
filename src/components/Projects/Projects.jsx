@@ -121,7 +121,7 @@ export default function Projects() {
                     style={{ backgroundColor: color }}
                     key={`modal_${index}`}
                   >
-                    <img src={`src/assets/${src}`} width={300} height={0} alt="image" className='h-auto' />
+                    <img src={`/src/assets/${src}`} width={300} height={0} alt="image" className='h-auto' />
                   </div>
                 )
               })

@@ -1,11 +1,11 @@
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { images } from '../../assets/images';
 
-const images = [
-    'pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg',
-    'pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg',
-]
+const carouselImages = [...images, ...images]; // For looping we have used the photos twice
+console.log(carouselImages);
+
 
 export default function Carousel() {
     const firstSet = useRef(null);
@@ -64,18 +64,18 @@ export default function Carousel() {
                 <div className="flex relative w-max">
                     {/* First Set of Images */}
                     <div ref={firstSet} className="flex whitespace-nowrap ">
-                        {images.map((src, i) => (
+                        {carouselImages.map((src, i) => (
                             <div key={`first-${i}`} className="relative w-40 h-28 shrink-0">
-                                <img src={`src/assets/${src}`} alt={`img-${i}`} className="w-full h-full object-cover" />
+                                <img src={`${src}`} alt={`img-${i}`} className="w-full h-full object-cover" />
                             </div>
                         ))}
                     </div>
 
                     {/* Second Set of Images */}
                     <div ref={secondSet} className="flex whitespace-nowrap absolute right-0">
-                        {images.map((src, i) => (
+                        {carouselImages.map((src, i) => (
                             <div key={`second-${i}`} className="relative w-40 h-28 shrink-0">
-                                <img src={`src/assets/${src}`} alt={`img2-${i}`} className="w-full h-full object-cover" />
+                                <img src={`${src}`} alt={`img2-${i}`} className="w-full h-full object-cover" />
                             </div>
                         ))}
                     </div>

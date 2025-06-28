@@ -10,7 +10,7 @@ const About = () => {
                 <h2 className='text-4xl font-bold mb-3'>About Me</h2>
                 <p>I'm an architect and designer driven by a passion for creating meaningful spaces that blend aesthetics with functionality. With a deep curiosity for cultures and environments, I often draw inspiration from my travels to inform my creative work.</p>
                 <p className='mt-4'>Whether it's urban planning, interior design, or conceptual architecture, I believe every project tells a story. My approach is collaborative, intentional, and rooted in thoughtful design. Ready to start your next project?</p>
-                <img src="" alt="" />
+                {/* <img src="" alt="" /> */}
             </div>
 
             <div className='w-[30%] mx-3'>

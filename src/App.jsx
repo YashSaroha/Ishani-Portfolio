@@ -4,14 +4,15 @@ import Preloader from './components/Preloader/Preloader';
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import About from './components/About/About'
-import Projects from './components/Projects/Projects'
+import Projects from './components/Projects/Projects';
 import Services from './components/Services/Services'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-//e0e1dd
-//778da9
-//415a77
-//1b263b
+// colors used
+// e0e1dd
+// 778da9
+// 415a77
+// 1b263b
 const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
